@@ -37,9 +37,6 @@ The small but consistent difference suggests domain-specific reward shaping prov
 
 ---
 
-## Videos
-
-Example rollouts for both arms: [Google Drive link]
 
 ---
 
@@ -87,7 +84,7 @@ Runs 200 episodes per arm, plots tracking error and reward over episodes.
 
 ### Why FetchReachDense-v4
 
-We initially built custom MuJoCo XML files for both arms. These caused NaN instability — the links had no mass or inertia defined so the physics equations divided by zero. After trying three fixes (reduced gains, inertiafromgeom flag, smaller timestep) we switched to FetchReachDense-v4 — a pre-validated Franka arm with correct physics already defined. We added our custom reward, trajectory, noise and delay on top.
+I initially built custom MuJoCo XML files for both arms. These caused NaN instability  the links had no mass or inertia defined so the physics equations divided by zero. After trying three fixes (reduced gains, inertiafromgeom flag, smaller timestep) we switched to FetchReachDense-v4 — a pre-validated Franka arm with correct physics already defined. We added our custom reward, trajectory, noise and delay on top.
 
 Lesson: under time pressure, build on validated environments rather than reinventing the physics.
 

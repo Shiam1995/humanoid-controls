@@ -6,7 +6,7 @@ Humanoid.
 # Tokamak Robot Arm — RL End-Effector Tracking
 link to yuoutube video https://youtu.be/w9sFMGH7Mz4
 
-Humanoid Internship Challenge submission — Controls Internship 2026.
+Humanoid Controls
 
 ## The Idea
 

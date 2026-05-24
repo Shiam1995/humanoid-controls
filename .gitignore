@@ -1,0 +1,7 @@
+env/
+results/videos/
+results/tensorboard/
+envs/__pycache__/
+__pycache__/
+*.pyc
+MUJOCO_LOG.TXT

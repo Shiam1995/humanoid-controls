@@ -1,0 +1,30 @@
+<mujoco model="tokamak_vessel">
+  <option timestep="0.002" gravity="0 0 -9.81"/>
+  
+  <asset>
+    <material name="vessel_mat" rgba="0.3 0.3 0.8 0.3"/>
+    <material name="port_mat" rgba="0.8 0.3 0.3 0.8"/>
+    <material name="target_mat" rgba="0.0 1.0 0.0 1.0"/>
+  </asset>
+
+  <worldbody>
+    <!-- Vessel floor -->
+    <geom name="floor" type="plane" size="5 5 0.1" pos="0 0 0" material="vessel_mat"/>
+    
+    <!-- Tokamak port walls (650x600mm = 0.65x0.60m) -->
+    <!-- Left wall -->
+    <geom name="port_left"  type="box" size="0.01 0.30 0.50" pos="-0.325 0 0.50" material="port_mat"/>
+    <!-- Right wall -->
+    <geom name="port_right" type="box" size="0.01 0.30 0.50" pos="0.325 0 0.50"  material="port_mat"/>
+    <!-- Top wall -->
+    <geom name="port_top"   type="box" size="0.325 0.30 0.01" pos="0 0 1.00"     material="port_mat"/>
+    <!-- Back wall -->
+    <geom name="port_back"  type="box" size="0.325 0.01 0.50" pos="0 0.30 0.50"  material="port_mat"/>
+
+    <!-- Target marker (moved by code) -->
+    <body name="target" pos="0 0 0.5">
+      <geom name="target_geom" type="sphere" size="0.02" material="target_mat"/>
+    </body>
+
+  </worldbody>
+</mujoco>

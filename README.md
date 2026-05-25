@@ -4,7 +4,11 @@ Humanoid.
 <img width="1280" height="720" alt="Untitled design" src="https://github.com/user-attachments/assets/fbbc4060-624c-41b9-82da-c6f7f0dac788" />
 
 # Tokamak Robot Arm — RL End-Effector Tracking
-link to yuoutube video https://youtu.be/w9sFMGH7Mz4
+link to youtube video https://youtu.be/w9sFMGH7Mz4
+link to a youtube video that looks at a potential end goal 
+
+https://youtu.be/VQJxCA_lsoA
+AI Agent in a Reconstructed World  Combining Gaussian Splatting, YOLO and LLM Reasoning
 
 Humanoid Controls
 
